@@ -1,4 +1,4 @@
-# System Programming Lab 2 - fork+exec, wait
+# System Programming Lab 2 - creating processes
 ## Task A
 Write a program `domath.c` and compile it as `domath`. The program should accept two arguments, create four child processes and pass the arguments to the child processes. Each of the child processes will perfom an arithmetic operation over the arguments (like addition, subtraction, multiplication or division) as shown below. File `domath.c` should contain code of parent process and all its child processes.
 
@@ -56,5 +56,5 @@ $ Enter your command: exit
 3. man waitpid
 4. man clone
 5. [OSTEP Chapter 5](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf)
-6. Chapters 6,9, 24-28 of Linux Programming Interface by Micheal Kerrisk
+6. Chapters 6, 24-28 of Linux Programming Interface by Micheal Kerrisk
 7. Chapter 5 of Linux System Programming by Robert Love
