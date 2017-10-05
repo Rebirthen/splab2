@@ -51,10 +51,10 @@ $ Enter your command: exit
 `fork` and `exec` system calls are UNIX-wide. Linux has it's own `clone` system call for creating processes (actually threads). Complete **Task A** using `clone` system call.
 
 ## References
-1. man fork
-2. man execve
-3. man waitpid
-4. man clone
+1. `man fork`
+2. `man execve`
+3. `man waitpid`
+4. `man clone`
 5. [OSTEP Chapter 5](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf)
 6. Chapters 6, 24-28 of Linux Programming Interface by Micheal Kerrisk
 7. Chapter 5 of Linux System Programming by Robert Love
