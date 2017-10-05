@@ -24,7 +24,7 @@ bash: 3/5=0
 parent: done.
 ```
 
-## Task C.1
+## Task C
 Write a program `shell.c` that repeatedly (in a loop) prompts user for a command, reads the command and executes it in a child process. If a user prints `&` in the end of a command your program should run the command in a child process in the background. When user enters `exit` command your program should exit.
 ```
 $ Enter your command: ls -a
@@ -34,8 +34,8 @@ $ Enter your command: gnome-calculator -e 2+3
 $ Enter your command: exit
 ```
 
-## Task C.2
-Task C.2 is an extension of **Task C.1**. Add a built-in command `sj` which will show pids of all background processes only if they are still running. Give `pshell.c` name to your program.
+## Task D
+Task D is an extension of **Task C**. Add a built-in command `sj` which will show pids of all background processes only if they are still running. Give `pshell.c` name to your program.
 ```
 $ gcc pshell.c -o pshell
 $ ./pshell
@@ -47,7 +47,7 @@ $ Enter your command: sj
 $ Enter your command: exit
 ```
 
-## Task A.2
+## Task E
 `fork` and `exec` system calls are UNIX-wide. Linux has it's own `clone` system call for creating processes (actually threads). Complete **Task A** using `clone` system call.
 
 ## References
