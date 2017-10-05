@@ -24,11 +24,37 @@ bash: 3/5=0
 parent: done.
 ```
 
+## Task C.1
+Write a program `shell.c` that repeatedly (in a loop) prompts user for a command, reads the command and executes it in a child process. If a user prints `&` in the end of a command your program should run the command in a child process in the background. When user enters `exit` command your program should exit.
+```
+$ Enter your command: ls -a
+.  ..  a.c  b.py  c.cpp  D.java
+$ Enter your command: gnome-mines &
+$ Enter your command: gnome-calculator -e 2+3
+$ Enter your command: exit
+```
 
+## Task C.2
+Task C.2 is an extension of **Task C.1**. Add a built-in command `sj` which will show pids of all background processes only if they are still running. Give `pshell.c` name to your program.
+```
+$ gcc pshell.c -o pshell
+$ ./pshell
+$ Enter your command: gnome-mines &
+$ Enter your command: gnome-calculator -e 2+3 &
+$ Enter your command: sj
+1. [65123]
+2. [65124]
+$ Enter your command: exit
+```
 
-## Task C
-Task B goes here
-## Task D
-Task B goes here
-## Task E
-Task B goes here
+## Task A.2
+`fork` and `exec` system calls are UNIX-wide. Linux has it's own `clone` system call for creating processes (actually threads). Complete **Task A** using `clone` system call.
+
+## References
+1. man fork
+2. man execve
+3. man waitpid
+4. man clone
+5. [OSTEP Chapter 5](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf)
+6. Chapters 6,9, 24-28 of Linux Programming Interface by Micheal Kerrisk
+7. Chapter 5 of Linux System Programming by Robert Love
